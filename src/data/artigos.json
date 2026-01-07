@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "slug": "como-planejar-viagem-dos-sonhos",
+    "titulo": "Como planejar a viagem dos seus sonhos",
+    "autor": "Ana Silva",
+    "data": "2026-01-05",
+    "descricao": "Um guia completo para organizar seu roteiro sem estresse.",
+    "conteudo": "Planejar uma viagem requer atenção aos detalhes, desde a escolha do destino até o fechamento das malas..."
+  },
+  {
+    "id": 2,
+    "slug": "melhores-destinos-baratos-europa",
+    "titulo": "Melhores destinos baratos na Europa",
+    "autor": "Marcos Porto",
+    "data": "2026-01-06",
+    "descricao": "Descubra cidades incríveis que cabem no seu bolso.",
+    "conteudo": "A Europa não precisa ser cara. Cidades como Praga, Budapeste e Lisboa oferecem experiências riquíssimas por preços acessíveis..."
+  }
+]
