@@ -2,9 +2,16 @@ import artigos from '@/data/artigos.json';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 
+export async function generateStaticParams() {
+  return artigos.map((a) => ({ slug: a.slug }));
+}
+
 export async function generateMetadata({ params }) {
   const artigo = artigos.find((a) => a.slug === params.slug);
-  return { title: artigo ? `${artigo.titulo} | Blog` : 'Artigo' };
+  return {
+    title: artigo ? `${artigo.titulo} | Blog` : 'Artigo',
+    description: artigo?.descricao,
+  };
 }
 
 export default async function PaginaArtigo({ params }) {
@@ -40,11 +47,11 @@ export default async function PaginaArtigo({ params }) {
           </div>
         </header>
 
-        <div style={{ 
-          fontSize: '1.25rem', 
-          lineHeight: '1.8', 
+        <div style={{
+          fontSize: '1.25rem',
+          lineHeight: '1.8',
           color: '#2c3e50',
-          textAlign: 'justify' 
+          textAlign: 'justify'
         }}>
           {artigo.conteudo}
         </div>
